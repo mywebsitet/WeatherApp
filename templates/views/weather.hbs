@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {{>link}}
+
+    <title>weather app</title>
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+</head>
+
+<body>
+    {{>navbar}}
+
+    {{!--
+    main -header --}}
+
+    <div class="contanier-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+               <div class="main_content">
+                   <form action="" class="temp_form">
+                       <input type="text" id="cityname" placeholder="Enter your city name" autocomplete="off">
+                       <input type="submit" value="search" id= "submitbtn">
+                   </form>
+               </div>
+               <div class="temInfo">
+                   <div class="top_layer">
+                       <p id= "day">tuesDay</p>
+                       <p id="today_date">13 oct</p>
+                   </div>
+                   <div class="main_layer">
+                       <p id="city_name">Get Output Here</p>
+                       <div class="middle_layer data_hide">
+                           <p id="tem"><span id="temp">0</span><sup>o</sup>C</p>
+                            <p id="temp_status"> <i class="fa fa-cloud" aria-hidden="true"></i> </p>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    {{>footer}}
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
